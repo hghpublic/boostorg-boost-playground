@@ -1,0 +1,28 @@
+= python
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+== python
+
+https://github.com/boostorg/python
+
+https://boostorg.github.io/python
+
+
+== numpy
+
+----
+python3 -c "import numpy"
+----
+
+`Python3_NumPy_INCLUDE_DIR`::
+----
+-DPython3_NumPy_INCLUDE_DIR=/usr/lib/python3/dist-packages/numpy/core/include
+
+❯ python3 -c "import sys; sys.stderr = sys.stdout; import numpy; print(numpy.get_include())" 
+/usr/lib/python3/dist-packages/numpy/core/include
+----
