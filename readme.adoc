@@ -1,0 +1,35 @@
+= boost
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+== boost
+
+https://www.boost.org/
+
+https://github.com/boostorg/boost
+
+https://www.boost.org/libraries
+
+== Building
+
+=== cmake
+
+https://cmake.org/cmake/help/latest/module/FindBoost.html
+
+=== vcpkg
+
+https://vcpkg.io/en/package/boost.html
+
+== Books
+
+=== Die Boost C++ Bibliotheken
+
+https://dieboostcppbibliotheken.de/
+
+=== The Boost C++ Libraries
+
+https://theboostcpplibraries.com/
