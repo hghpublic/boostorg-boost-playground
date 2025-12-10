@@ -1,0 +1,13 @@
+= interprocess
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+== interprocess
+
+https://github.com/boostorg/interprocess
+
+https://boostorg.github.io/interprocess
