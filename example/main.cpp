@@ -9,7 +9,7 @@
 #include <fstream> // needed for de/serialization example (4)
 #include <algorithm>
 #include <boost/ref.hpp>
-#include <boost/bind.hpp>
+#include <boost/bind/bind.hpp>
 #include <boost/array.hpp>
 #include <boost/foreach.hpp>
 #include <boost/accumulators/accumulators.hpp>
