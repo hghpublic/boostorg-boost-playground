@@ -1,0 +1,15 @@
+= coroutine2
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+== coroutine2
+
+
+https://github.com/boostorg/coroutine2
+
+https://boostorg.github.io/coroutine2
+
