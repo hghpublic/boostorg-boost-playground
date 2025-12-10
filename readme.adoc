@@ -1,0 +1,13 @@
+= serialization
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+== serialization
+
+https://github.com/boostorg/serialization
+
+https://www.boost.org/libs/serialization
