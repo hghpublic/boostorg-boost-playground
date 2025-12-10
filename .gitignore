@@ -1,0 +1,10 @@
+bin.SCons
+*.pyc
+*~
+\#*\#
+
+# macos
+.DS_Store
+
+# cmake
+build/
