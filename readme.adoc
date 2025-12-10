@@ -1,0 +1,17 @@
+= accumulators
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+== accumulators
+
+https://www.boost.org/
+
+https://www.boost.org/library/latest/accumulators/
+
+https://github.com/boostorg/accumulators
+
+https://www.boost.org/doc/libs/latest/doc/html/accumulators.html
