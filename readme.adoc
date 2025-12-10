@@ -1,0 +1,13 @@
+= lambda2
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+== lambda2
+
+https://github.com/boostorg/lambda2
+
+https://www.boost.org/libs/lambda2
