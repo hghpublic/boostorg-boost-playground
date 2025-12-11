@@ -53,6 +53,8 @@ void exec_test()
     std::cout << "registering extension module embedded_hello..." << std::endl;
     
   // Register the module with the interpreter
+  using Initfunc = PyObject* (*)(void);
+  Initfunc initembedded_hello = PyInit_embedded_hello;
   if (PyImport_AppendInittab("embedded_hello", initembedded_hello) == -1)
     throw std::runtime_error("Failed to add embedded_hello to the interpreter's "
                  "builtin modules");
