@@ -53,12 +53,16 @@ void exec_test()
     std::cout << "registering extension module embedded_hello..." << std::endl;
     
   // Register the module with the interpreter
+  // https://docs.python.org/3/c-api/import.html#c.PyImport_AppendInittab
   using Initfunc = PyObject* (*)(void);
   Initfunc initembedded_hello = PyInit_embedded_hello;
   if (PyImport_AppendInittab("embedded_hello", initembedded_hello) == -1)
     throw std::runtime_error("Failed to add embedded_hello to the interpreter's "
                  "builtin modules");
 
+  // Initialize the interpreter
+  Py_Initialize();
+  
   std::cout << "defining Python class derived from Base..." << std::endl;
   
   // Retrieve the main module
@@ -124,7 +128,7 @@ int main(int argc, char **argv)
   BOOST_TEST(argc == 2);
   std::string script = argv[1];
   // Initialize the interpreter
-  Py_Initialize();
+//   Py_Initialize();
 
   bool error_expected = false;
   
