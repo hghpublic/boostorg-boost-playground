@@ -126,8 +126,8 @@ int main(int argc, char **argv)
         "z2 = numpy.zeros((4,3), dtype=float)\n"
         "example.fill1(z1)\n"
         "example.fill2(z2)\n"
-        "print z1\n"
-        "print z2\n"
+        "print(z1)\n"
+        "print(z2)\n"
     );
     Py_Finalize();
 }
