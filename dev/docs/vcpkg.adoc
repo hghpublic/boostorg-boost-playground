@@ -1,0 +1,534 @@
+= vcpkg
+
+boost-signals2::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS signals2)
+target_link_libraries(main PRIVATE Boost::signals2)
+----
+
+boost-test::
++
+[source, cmake]
+----
+find_package(boost_included_prg_exec_monitor CONFIG REQUIRED)
+target_link_libraries(main PRIVATE Boost::included_prg_exec_monitor)
+
+find_package(boost_included_test_exec_monitor CONFIG REQUIRED)
+target_link_libraries(main PRIVATE Boost::included_test_exec_monitor)
+
+find_package(boost_included_unit_test_framework CONFIG REQUIRED)
+target_link_libraries(main PRIVATE Boost::included_unit_test_framework)
+
+find_package(boost_prg_exec_monitor CONFIG REQUIRED)
+target_link_libraries(main PRIVATE Boost::prg_exec_monitor)
+
+find_package(boost_test_exec_monitor CONFIG REQUIRED)
+target_link_libraries(main PRIVATE Boost::test_exec_monitor)
+
+find_package(boost_unit_test_framework CONFIG REQUIRED)
+target_link_libraries(main PRIVATE Boost::unit_test_framework)
+----
+
+boost-beast::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS beast)
+target_link_libraries(${target} PRIVATE Boost::beast)
+----
+
+boost-asio::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS asio)
+target_link_libraries(${target} PRIVATE Boost::asio)
+----
+
+boost-test::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS unit_test_framework)
+target_link_libraries(${target} PRIVATE Boost::unit_test_framework)
+----
+
+boost-openssl::
++
+[source, cmake]
+----
+find_package(OpenSSL REQUIRED)
+target_link_libraries(${target} PRIVATE OpenSSL::SSL)
+target_link_libraries(${target} PRIVATE OpenSSL::Crypto)
+----
+
+boost-config::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS config)
+target_link_libraries(${target} PRIVATE Boost::config)
+----
+
+boost-assert::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS assert)
+target_link_libraries(${target} PRIVATE Boost::assert)
+
+
+find_package(Boost REQUIRED COMPONENTS throw_exception)
+target_link_libraries(${target} PRIVATE Boost::throw_exception)
+
+----
+
+boost-predef::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS predef)
+target_link_libraries(${target} PRIVATE Boost::predef)
+
+----
+
+boost-mp11::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS mp11)
+target_link_libraries(${target} PRIVATE Boost::mp11)
+
+----
+
+boost-static-assert::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS static_assert)
+target_link_libraries(${target} PRIVATE Boost::static_assert)
+
+----
+
+boost-core::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS core)
+target_link_libraries(${target} PRIVATE Boost::core)
+
+
+----
+
+boost-describe::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS describe)
+target_link_libraries(${target} PRIVATE Boost::describe)
+
+
+----
+
+boost-container-hash::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS container_hash)
+target_link_libraries(${target} PRIVATE Boost::container_hash)
+
+----
+
+boost-unordered::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS unordered)
+target_link_libraries(${target} PRIVATE Boost::unordered)
+
+----
+
+boost-type-traits::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS type_traits)
+target_link_libraries(${target} PRIVATE Boost::type_traits)
+
+
+----
+
+boost-tuple::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS tuple)
+target_link_libraries(${target} PRIVATE Boost::tuple)
+
+
+----
+
+boost-smart-ptr::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS smart_ptr)
+target_link_libraries(${target} PRIVATE Boost::smart_ptr)
+
+----
+
+boost-preprocessor::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS preprocessor)
+target_link_libraries(${target} PRIVATE Boost::preprocessor)
+
+----
+
+boost-io::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS io)
+target_link_libraries(${target} PRIVATE Boost::io)
+
+----
+
+boost-utility::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS utility)
+target_link_libraries(${target} PRIVATE Boost::utility)
+
+
+----
+
+boost-mpl::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS mpl)
+target_link_libraries(${target} PRIVATE Boost::mpl)
+
+----
+
+boost-integer::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS integer)
+target_link_libraries(${target} PRIVATE Boost::integer)
+
+
+----
+
+boost-concept-check::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS concept_check)
+target_link_libraries(${target} PRIVATE Boost::concept_check)
+
+----
+
+boost-regex::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS regex)
+target_link_libraries(${target} PRIVATE Boost::regex)
+
+----
+
+boost-optional::
++
+[source, cmake]
+----
+find_package(Boost REQUIRED COMPONENTS optional)
+target_link_libraries(${target} PRIVATE Boost::optional)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::optional)
+
+The package boost-typeof is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS typeof)
+target_link_libraries(${target} PRIVATE Boost::typeof)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::typeof)
+
+The package boost-detail is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS detail)
+target_link_libraries(${target} PRIVATE Boost::detail)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::detail)
+
+The package boost-function-types is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS function_types)
+target_link_libraries(${target} PRIVATE Boost::function_types)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::function_types)
+
+The package boost-bind is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS bind)
+target_link_libraries(${target} PRIVATE Boost::bind)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::bind)
+
+The package boost-function is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS function)
+target_link_libraries(${target} PRIVATE Boost::function)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::function)
+
+The package boost-functional is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS functional)
+target_link_libraries(${target} PRIVATE Boost::functional)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::functional)
+
+The package boost-fusion is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS fusion)
+target_link_libraries(${target} PRIVATE Boost::fusion)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::fusion)
+
+The package boost-iterator is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS iterator)
+target_link_libraries(${target} PRIVATE Boost::iterator)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::iterator)
+
+The package boost-conversion is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS conversion)
+target_link_libraries(${target} PRIVATE Boost::conversion)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::conversion)
+
+The package boost-array is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS array)
+target_link_libraries(${target} PRIVATE Boost::array)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::array)
+
+The package boost-range is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS range)
+target_link_libraries(${target} PRIVATE Boost::range)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::range)
+
+The package boost-exception is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS exception)
+target_link_libraries(${target} PRIVATE Boost::exception)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::exception)
+
+The package boost-algorithm is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS algorithm)
+target_link_libraries(${target} PRIVATE Boost::algorithm)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::algorithm)
+
+The package boost-align is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS align)
+target_link_libraries(${target} PRIVATE Boost::align)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::align)
+
+The package boost-winapi is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS winapi)
+target_link_libraries(${target} PRIVATE Boost::winapi)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::winapi)
+
+The package boost-variant2 is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS variant2)
+target_link_libraries(${target} PRIVATE Boost::variant2)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::variant2)
+
+The package boost-system is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS system)
+target_link_libraries(${target} PRIVATE Boost::system)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::system)
+
+The package boost-tokenizer is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS tokenizer)
+target_link_libraries(${target} PRIVATE Boost::tokenizer)
+
+
+find_package(Boost REQUIRED COMPONENTS numeric_conversion)
+target_link_libraries(${target} PRIVATE Boost::numeric_conversion)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::numeric_conversion)
+
+The package boost-move is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS move)
+target_link_libraries(${target} PRIVATE Boost::move)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::move)
+
+The package boost-intrusive is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS intrusive)
+target_link_libraries(${target} PRIVATE Boost::intrusive)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::intrusive)
+
+The package boost-container is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS container)
+target_link_libraries(${target} PRIVATE Boost::container)
+
+or the generated cmake configs via:
+
+find_package( REQUIRED CONFIG)
+target_link_libraries(${target} PRIVATE Boost::container)
+
+The package boost-lexical-cast is compatible with built-in CMake targets of FindBoost.cmake:
+
+find_package(Boost REQUIRED COMPONENTS lexical_cast)
+target_link_libraries(${target} PRIVATE Boost::lexical_cast)
+
+
+
+find_package(Boost REQUIRED COMPONENTS date_time)
+target_link_libraries(${target} PRIVATE Boost::date_time)
+
+
+find_package(Boost REQUIRED COMPONENTS pool)
+target_link_libraries(${target} PRIVATE Boost::pool)
+
+
+find_package(Boost REQUIRED COMPONENTS context)
+target_link_libraries(${target} PRIVATE Boost::context)
+
+
+find_package(Boost REQUIRED COMPONENTS asio)
+target_link_libraries(${target} PRIVATE Boost::asio)
+
+find_package(Boost REQUIRED COMPONENTS type_index)
+target_link_libraries(${target} PRIVATE Boost::type_index)
+
+
+find_package(Boost REQUIRED COMPONENTS static_string)
+target_link_libraries(${target} PRIVATE Boost::static_string)
+
+
+
+
+find_package(Boost REQUIRED COMPONENTS logic)
+target_link_libraries(${target} PRIVATE Boost::logic)
+
+
+
+
+
+
+find_package(Boost REQUIRED COMPONENTS endian)
+target_link_libraries(${target} PRIVATE Boost::endian)
+
+
+
+find_package(Boost REQUIRED COMPONENTS beast)
+target_link_libraries(${target} PRIVATE Boost::beast)
+
+
+
+find_package(Boost REQUIRED COMPONENTS test)
+target_link_libraries(${target} PRIVATE Boost::test)
+
+
+
+find_package(OpenSSL REQUIRED)
+target_link_libraries(${target} PRIVATE OpenSSL::SSL)
+target_link_libraries(${target} PRIVATE OpenSSL::Crypto)
+
+
+----
+
