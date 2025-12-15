@@ -174,7 +174,9 @@ set_target_properties(${target} PROPERTIES
 endforeach()
 
 
-target_sources(test_array PRIVATE A.cpp)
+# target_sources(test_array PRIVATE A.cpp)
+target_link_libraries(test_array PRIVATE A)
+
 # targets depending on A.cpp
 
 # set(targets_dep_A
