@@ -1,0 +1,11 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+    "name": "coroutine2",
+    "version": "1.89.0",
+    "dependencies": [
+        "boost-coroutine2",
+        "boost-test",
+        "boost-chrono",
+        "boost-program-options"
+    ]
+}
