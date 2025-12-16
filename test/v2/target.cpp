@@ -42,7 +42,7 @@ int main(int argc, char * argv[])
         std::wcout << boost::process::v2::wstring_view(buf, sz) << std::flush;
 #else
         char buf[65535];
-        printf(::getcwd(buf, sizeof(buf)));
+        printf("%s", ::getcwd(buf, sizeof(buf)));
 #endif
         return 0;
     }
