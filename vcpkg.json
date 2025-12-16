@@ -1,0 +1,9 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+    "name": "lambda2",
+    "version": "1.89.0",
+    "dependencies": [
+        "boost-lambda2",
+        "boost-test"
+    ]
+}
