@@ -1,0 +1,18 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+    "name": "process",
+    "version": "1.89.0",
+    "dependencies": [
+        "boost-process",
+        "boost-asio",
+        "boost-core",
+        "boost-filesystem",
+        "boost-iostreams",
+        "boost-lambda",
+        "boost-program-options",
+        "boost-scope-exit",
+        "boost-system",
+        "boost-thread",
+        "boost-test"
+    ]
+}
