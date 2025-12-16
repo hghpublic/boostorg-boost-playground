@@ -1,0 +1,17 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+    "name": "cobalt",
+    "version": "1.89.0",
+    "dependencies": [
+        "boost-cobalt",
+        "boost-asio",
+        "boost-beast",
+        "boost-json",
+        "boost-lockfree",
+        "boost-signals2",
+        "boost-context",
+        "boost-system",
+        "boost-test",
+        "openssl"
+    ]
+}
