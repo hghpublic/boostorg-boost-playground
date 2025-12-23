@@ -1,0 +1,15 @@
+= YouTube
+
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+== CppCon
+
+=== Debugging C++ Coroutines in GDB - Zartaj Majeed - CppCon 2025
+
+https://www.youtube.com/watch?v=aH-Y9N7EPSc
+
