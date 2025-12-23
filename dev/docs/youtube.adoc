@@ -9,6 +9,8 @@ ifndef::env-github[:icons: font]
 
 == CppCon
 
+https://cppcon.org/
+
 === Debugging C++ Coroutines in GDB - Zartaj Majeed - CppCon 2025
 
 https://www.youtube.com/watch?v=aH-Y9N7EPSc
